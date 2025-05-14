@@ -102,16 +102,26 @@ textarea {
     padding: 10px;
     margin-bottom: 15px;
     border: 1px solid #ccc;
-    border
-/* Estilo do mapa */
-iframe {
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    margin-top: 10px;
-    display: block;
+    border-radius: 4px;
+    font-size: 1rem;
 }
 
-/* Estilo do botão Como Chegar */
+button {
+    background-color: #003366;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Botão Como Chegar */
 .map-button {
     text-align: center;
     margin-top: 15px;
@@ -130,4 +140,27 @@ iframe {
 
 .map-button button:hover {
     background-color: #0056b3;
+}
+
+/* Estilo do mapa */
+iframe {
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+    display: block;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 30px 20px;
+    background-color: #f8f9fa;
+    color: #666;
+    border-top: 1px solid #e9ecef;
+    margin-top: 40px;
+    border-radius: 10px;
+}
+
+footer a {
+    color: #007BFF;
 }
