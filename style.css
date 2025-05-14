@@ -186,7 +186,25 @@ button:hover {
 .map-button button:hover {
     background-color: #0056b3;
 }
+/* Estilo da foto do perfil */
+.profile {
+    text-align: center;
+    margin-bottom: 20px;
+}
 
+.profile-img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border: 3px solid #007BFF;
+    transition: transform 0.3s ease;
+}
+
+.profile-img:hover {
+    transform: scale(1.05);
+}
 /* Rodapé */
 footer {
     text-align: center;
