@@ -103,3 +103,31 @@ textarea {
     margin-bottom: 15px;
     border: 1px solid #ccc;
     border
+/* Estilo do mapa */
+iframe {
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+    display: block;
+}
+
+/* Estilo do botão Como Chegar */
+.map-button {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.map-button button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.map-button button:hover {
+    background-color: #0056b3;
+}
