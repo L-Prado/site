@@ -132,8 +132,8 @@ section.fade-in {
 }
 
 .profile-img {
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
     object-fit: cover;
     border-radius: 50%;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -152,7 +152,7 @@ section.fade-in {
     margin-top: 15px;
     font-size: 1rem;
     color: #555;
-    text-align: judtify;
+    text-align: justify;
     max-width: 360px;
     margin-left: auto;
     margin-right: auto;
