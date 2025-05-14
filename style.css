@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 
-/* Estilo base */
+/* Estilo base do corpo */
 body {
     font-family: Cambria, "Times New Roman", serif;
     background-color: #f9f9f9;
@@ -28,11 +28,12 @@ body {
 
 /* Justificação global para todos os parágrafos */
 p {
-    text-align: justify;
-    text-justify: inter-word;
-    margin-bottom: 1.2em;
-    text-indent: 1.5em;
-    padding-right: 5px;
+    text-align: justify !important;
+    text-justify: inter-word !important;
+    margin-bottom: 1.2em !important;
+    text-indent: 1.5em !important;
+    padding-right: 5px !important;
+    font-family: Cambria, "Times New Roman", serif !important;
 }
 
 /* Header Hero */
@@ -76,11 +77,14 @@ p {
     font-style: italic;
 }
 
-/* Titles */
+/* Títulos */
+h1, h2, h3 {
+    font-family: Cambria, "Times New Roman", serif;
+}
+
 h1 {
     font-size: 2.8rem;
     margin-bottom: 10px;
-    font-family: Cambria, "Times New Roman", serif;
 }
 
 h2 {
@@ -89,13 +93,6 @@ h2 {
     margin-bottom: 10px;
     border-bottom: 2px solid #ddd;
     padding-bottom: 5px;
-    font-family: Cambria, "Times New Roman", serif;
-}
-
-h3 {
-    color: #003366;
-    margin-bottom: 10px;
-    font-family: Cambria, "Times New Roman", serif;
 }
 
 /* Animação das seções */
@@ -160,7 +157,8 @@ section.fade-in {
     margin-left: auto;
     margin-right: auto;
     font-style: italic;
-    text-indent: 0; /* Remove recuo apenas na mini bio */
+    text-indent: 0 !important; /* Remove recuo apenas na mini bio */
+    font-family: Cambria, "Times New Roman", serif !important;
 }
 
 /* Linha divisória abaixo da bio */
@@ -199,6 +197,7 @@ label {
     display: block;
     font-weight: bold;
     margin-bottom: 5px;
+    font-family: Cambria, "Times New Roman", serif;
 }
 
 input,
@@ -228,7 +227,6 @@ button:hover {
     background-color: #0056b3;
 }
 
-/* Botão Como Chegar */
 .map-button {
     text-align: center;
     margin-top: 20px;
@@ -249,7 +247,6 @@ button:hover {
     background-color: #0056b3;
 }
 
-/* Rodapé */
 footer {
     text-align: center;
     padding: 30px 20px;
