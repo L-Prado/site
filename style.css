@@ -8,11 +8,11 @@
 /* Estilo geral */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #f9f9f9;
     color: #333;
     line-height: 1.6;
     padding: 20px;
-    max-width: 800px;
+    max-width: 900px;
     margin: auto;
 }
 
@@ -26,30 +26,76 @@ header {
     margin-bottom: 30px;
 }
 
-/* Seções */
-section {
-    margin-bottom: 30px;
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+h1 {
+    font-size: 2.5rem;
 }
 
 h2 {
     color: #007BFF;
+    margin-top: 30px;
     margin-bottom: 10px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
 }
 
+/* Listas */
 ul {
-    list-style: none;
-    padding-left: 0;
+    list-style: disc inside;
+    padding-left: 20px;
+    margin-bottom: 20px;
 }
 
-ul li {
-    background: #e9ecef;
-    margin: 5px 0;
+/* Seções */
+section {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+}
+
+/* Links */
+a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Formulário */
+#contato form {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+#contato label {
+    font-weight: bold;
+}
+
+#contato input,
+#contato textarea {
+    width: 100%;
     padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
     border-radius: 4px;
+}
+
+#contato button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+#contato button:hover {
+    background-color: #0056b3;
 }
 
 /* Rodapé */
@@ -58,4 +104,5 @@ footer {
     padding: 20px;
     font-size: 0.9em;
     color: #666;
+    border-top: 1px solid #ddd;
 }
