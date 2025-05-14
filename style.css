@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 
-/* Estilo base */
+/* Base */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #f9f9f9;
@@ -16,12 +16,17 @@ body {
     margin: auto;
 }
 
+.container {
+    max-width: 100%;
+    padding: 0 20px;
+}
+
 /* Header Hero */
 .hero {
     background-color: #003366;
     color: white;
-    padding: 80px 20px;
     text-align: center;
+    padding: 100px 20px 80px;
     border-radius: 10px;
     margin-bottom: 40px;
 }
@@ -37,11 +42,12 @@ body {
     background-color: #007BFF;
     color: white;
     border: none;
-    padding: 12px 25px;
-    font-size: 1rem;
+    padding: 14px 25px;
+    font-size: 1.1rem;
     border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    font-weight: bold;
 }
 
 .cta-button:hover {
@@ -50,7 +56,7 @@ body {
 
 /* Titles */
 h1 {
-    font-size: 2.5rem;
+    font-size: 2.8rem;
     margin-bottom: 10px;
 }
 
@@ -62,14 +68,17 @@ h2 {
     padding-bottom: 5px;
 }
 
-/* Sections */
+/* Seções */
 section {
-    background: white;
-    padding: 20px;
+    padding: 40px 20px;
+    margin-bottom: 20px;
     border-radius: 8px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
-    margin-bottom: 30px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
     transition: transform 0.2s ease-in-out;
+}
+
+.gray-bg {
+    background-color: #f8f9fa;
 }
 
 section:hover {
@@ -83,11 +92,20 @@ ul {
     margin-bottom: 20px;
 }
 
+blockquote {
+    background: #fff;
+    border-left: 4px solid #007BFF;
+    padding: 10px 20px;
+    margin: 15px 0;
+    font-style: italic;
+}
+
 /* Formulário */
 form {
-    background: #f8f9fa;
+    background: #fff;
     padding: 20px;
     border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
 }
 
 label {
@@ -124,7 +142,7 @@ button:hover {
 /* Botão Como Chegar */
 .map-button {
     text-align: center;
-    margin-top: 15px;
+    margin-top: 20px;
 }
 
 .map-button button {
