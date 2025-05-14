@@ -14,11 +14,16 @@ body {
     padding: 20px;
     max-width: 800px;
     margin: auto;
+    scroll-behavior: smooth;
 }
 
 .container {
     max-width: 100%;
     padding: 0 20px;
+}
+
+.text-center {
+    text-align: center;
 }
 
 /* Header Hero */
@@ -29,6 +34,7 @@ body {
     padding: 100px 20px 80px;
     border-radius: 10px;
     margin-bottom: 40px;
+    position: relative;
 }
 
 .subtitle {
@@ -54,6 +60,13 @@ body {
     background-color: #0056b3;
 }
 
+.trust-seal {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #ccc;
+    font-style: italic;
+}
+
 /* Titles */
 h1 {
     font-size: 2.8rem;
@@ -68,21 +81,35 @@ h2 {
     padding-bottom: 5px;
 }
 
-/* Seções */
+/* Seções com animação */
 section {
     padding: 40px 20px;
     margin-bottom: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
-    transition: transform 0.2s ease-in-out;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.6s ease-out;
+}
+
+section.fade-in {
+    animation: fadeInUp 0.6s forwards;
+}
+
+/* Animação das seções */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .gray-bg {
     background-color: #f8f9fa;
-}
-
-section:hover {
-    transform: translateY(-3px);
 }
 
 /* Listas */
@@ -173,4 +200,18 @@ footer {
 
 footer a {
     color: #007BFF;
+}
+
+/* Centralizar CTA em mobile */
+@media (max-width: 600px) {
+    .cta-button {
+        width: 100%;
+        text-align: center;
+        margin: auto;
+    }
+
+    .map-button button,
+    .call-to-action button {
+        width: 100%;
+    }
 }
