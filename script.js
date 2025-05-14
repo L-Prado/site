@@ -1,6 +1,4 @@
-// Script simples para exibir uma mensagem no console
-console.log("Site carregado com sucesso!");
-
+console.log("Landing page carregada com sucesso!");
 document.addEventListener("DOMContentLoaded", function () {
     console.log("Página pronta para uso.");
 });
