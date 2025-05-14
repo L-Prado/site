@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
     console.log("Página pronta para uso.");
 });
 
-// Adiciona animação de scroll para CTAs
+// Adiciona scroll suave aos links internos
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
         e.preventDefault();
