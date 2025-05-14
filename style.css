@@ -112,20 +112,23 @@ section.fade-in {
     background-color: #f8f9fa;
 }
 
-/* Foto do perfil */
+/* Estilo da foto do perfil */
 .profile {
     text-align: center;
     margin: 20px 0;
 }
 
 .profile-img {
-    width: 180px;
-    height: 180px;
-    object-fit: cover;
+    width: 140px;
+    height: auto;
+    max-width: 100%;
     border-radius: 50%;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     border: 3px solid #007BFF;
     transition: transform 0.3s ease;
+    display: inline-block;
+    vertical-align: middle;
+    object-fit: cover;
 }
 
 .profile-img:hover {
