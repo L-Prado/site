@@ -17,6 +17,10 @@ body {
     scroll-behavior: smooth;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .container {
     max-width: 100%;
     padding: 0 20px;
@@ -95,34 +99,21 @@ h2 {
     padding-bottom: 5px;
 }
 
-/* Animação das seções */
+/* Seções com animação */
 section {
-    background-color: white; /* Seções em branco para destacar no fundo escuro */
     padding: 40px 20px;
+    margin-bottom: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
     opacity: 0;
     transform: translateY(20px);
     transition: all 0.6s ease-out;
+    will-change: transform, opacity; /* Otimização para animação */
 }
 
 section.fade-in {
     animation: fadeInUp 0.6s forwards;
-}
-
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.gray-bg {
-    background-color: #f8f9fa;
+    animation-play-state: running !important;
 }
 
 /* Foto do perfil */
@@ -283,6 +274,15 @@ footer a {
 
     iframe {
         height: 300px !important;
+    }
+}
+
+/* Ativação de animações em mobile */
+@media (max-width: 768px) {
+    section {
+        animation: fadeInUp 0.6s forwards;
+        animation-fill-mode: both;
+        transform: none;
     }
 }
 
