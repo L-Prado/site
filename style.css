@@ -8,8 +8,8 @@
 /* Estilo base do corpo */
 body {
     font-family: Cambria, "Times New Roman", serif;
-    background-color: #001f3d; /* Azul muito escuro */
-    color: #ffffff; /* Texto branco para bom contraste */
+    background-color: #001f3d; /* Azul profundo */
+    color: #ffffff; /* Texto padrão branco no fundo escuro */
     line-height: 1.7;
     padding: 20px;
     max-width: 800px;
@@ -26,7 +26,7 @@ body {
     text-align: center;
 }
 
-/* Justificação global para todos os parágrafos */
+/* Parágrafos justificados e com recuo */
 p {
     text-align: justify;
     text-justify: inter-word;
@@ -34,7 +34,26 @@ p {
     text-indent: 1.5em;
     padding-right: 5px;
     font-family: Cambria, "Times New Roman", serif;
-    color: #ffffff;
+    color: #ffffff; /* Branco no fundo escuro */
+}
+
+/* Títulos principais */
+h1, h2, h3 {
+    font-family: Cambria, "Times New Roman", serif;
+    color: #ffffff; /* Branco nos títulos */
+}
+
+h1 {
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: #007BFF; /* Azul claro nos subtítulos */
+    margin-top: 30px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+    padding-bottom: 5px;
 }
 
 /* Header Hero */
@@ -43,7 +62,7 @@ p {
     color: white;
     text-align: center;
     padding: 100px 20px 80px;
-    border-radius: 6px; /* Borda menos arredondada */
+    border-radius: 6px;
     margin-bottom: 40px;
     position: relative;
 }
@@ -61,7 +80,7 @@ p {
     border: none;
     padding: 14px 25px;
     font-size: 1.1rem;
-    border-radius: 4px; /* Bordas mais suaves */
+    border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.3s ease;
     font-weight: bold;
@@ -78,32 +97,12 @@ p {
     font-style: italic;
 }
 
-/* Títulos */
-h1, h2, h3 {
-    font-family: Cambria, "Times New Roman", serif;
-    color: #ffffff;
-}
-
-h1 {
-    font-size: 2.8rem;
-    margin-bottom: 10px;
-    color: #ffffff;
-}
-
-h2 {
-    color: #007BFF;
-    margin-top: 30px;
-    margin-bottom: 10px;
-    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
-    padding-bottom: 5px;
-}
-
-/* Animação das seções */
+/* Seções claras (formulário, depoimentos, etc.) */
 section {
-    background-color: white; /* Blocos em branco para destacar no fundo escuro */
-    color: #333;
+    background-color: white;
+    color: #333333 !important; /* Texto escuro nas seções claras */
     padding: 40px 20px;
-    border-radius: 6px; /* Menos arredondado */
+    border-radius: 6px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
     opacity: 0;
     transform: translateY(20px);
@@ -156,7 +155,7 @@ section.fade-in {
 .profile-bio {
     margin-top: 15px;
     font-size: 1rem;
-    color: #555;
+    color: #555555;
     text-align: center;
     max-width: 360px;
     margin-left: auto;
@@ -179,7 +178,7 @@ ul {
     list-style: disc inside;
     padding-left: 20px;
     margin-bottom: 20px;
-    color: #333;
+    color: #333333 !important;
 }
 
 blockquote {
@@ -189,7 +188,7 @@ blockquote {
     margin: 15px 0;
     font-style: italic;
     font-family: Cambria, "Times New Roman", serif;
-    color: #333;
+    color: #333333;
 }
 
 /* Formulário */
@@ -205,7 +204,7 @@ label {
     font-weight: bold;
     margin-bottom: 5px;
     font-family: Cambria, "Times New Roman", serif;
-    color: #333;
+    color: #333333;
 }
 
 input,
@@ -217,7 +216,7 @@ textarea {
     border-radius: 4px;
     font-size: 1rem;
     font-family: Cambria, "Times New Roman", serif;
-    color: #333;
+    color: #333333;
 }
 
 button {
@@ -288,21 +287,21 @@ footer a {
 
     .profile-bio {
         max-width: 100%;
-        color: #333;
+        color: #555555;
     }
 
     p {
-        color: #ffffff;
+        color: #333333;
         text-align: justify;
         text-indent: 1.5em;
     }
 
     blockquote {
-        color: #333;
+        color: #333333;
     }
 
     label, input, textarea {
-        color: #333;
+        color: #333333;
     }
 
     iframe {
