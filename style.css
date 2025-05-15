@@ -9,7 +9,7 @@
 body {
     font-family: Cambria, "Times New Roman", serif;
     background-color: #001f3d; /* Azul profundo */
-    color: #ffffff; /* Texto branco padrão */
+    color: #ffffff; /* Cor padrão do texto (branco) */
     line-height: 1.7;
     padding: 20px;
     max-width: 800px;
@@ -284,7 +284,7 @@ footer a {
     text-decoration: underline;
 }
 
-/* Botão Fixo WhatsApp - Mobile */
+/* Botão Fixo WhatsApp - Apenas Ícone */
 .whatsapp-button {
     display: none;
     position: fixed;
@@ -292,13 +292,14 @@ footer a {
     right: 20px;
     background-color: #25D366;
     color: white;
-    border-radius: 50px;
-    padding: 12px 20px;
+    border-radius: 50%;
+    padding: 12px;
     font-size: 1rem;
     z-index: 1000;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     text-decoration: none;
     align-items: center;
+    justify-content: center;
     transition: background-color 0.3s ease;
     animation: slideInUp 0.5s ease-in-out;
 }
@@ -308,59 +309,46 @@ footer a {
 }
 
 .whatsapp-icon {
-    display: inline-flex;
+    display: flex;
     justify-content: center;
     align-items: center;
-    background-color: white;
-    width: 32px;
-    height: 32px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
-    margin-right: 10px;
+    background-color: white;
     flex-shrink: 0;
 }
 
 .whatsapp-icon svg {
-    width: 18px;
-    height: 18px;
+    width: 20px;
+    height: 20px;
     fill: #25D366;
 }
 
-.whatsapp-button span {
-    font-family: Cambria, "Times New Roman", serif;
-    font-weight: bold;
-    color: white;
-    vertical-align: middle;
-}
-
 @media (max-width: 600px) {
     .whatsapp-button {
         display: flex;
     }
-}
 
-@media (max-width: 600px) {
-    .whatsapp-button {
-        display: flex;
-        animation: slideInUp 0.5s ease-in-out;
+    section {
+        padding: 30px 15px;
     }
 
     .profile-bio {
-        max-width: 100%;
-        color: #555555;
+        font-size: 0.95rem;
     }
 
     p {
-        color: #333333;
-        text-align: justify;
         text-indent: 0;
+        color: #333;
     }
 
     blockquote {
-        color: #333333;
+        color: #333;
     }
 
     label, input, textarea {
-        color: #333333;
+        color: #333;
     }
 
     iframe {
@@ -368,7 +356,7 @@ footer a {
     }
 }
 
-/* Animação do botão */
+/* Animação opcional do botão */
 @keyframes slideInUp {
     from {
         transform: translateY(100px);
