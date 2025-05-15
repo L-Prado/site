@@ -284,22 +284,18 @@ footer a {
     text-decoration: underline;
 }
 
-/* Botão Fixo WhatsApp - Apenas Ícone */
+/* Botão Fixo WhatsApp - Mobile */
 .whatsapp-button {
     display: none;
     position: fixed;
     bottom: 20px;
     right: 20px;
     background-color: #25D366;
-    color: white;
     border-radius: 50%;
     padding: 12px;
     font-size: 1rem;
     z-index: 1000;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-    text-decoration: none;
-    align-items: center;
-    justify-content: center;
     transition: background-color 0.3s ease;
     animation: slideInUp 0.5s ease-in-out;
 }
@@ -316,7 +312,7 @@ footer a {
     height: 40px;
     border-radius: 50%;
     background-color: white;
-    flex-shrink: 0;
+    color: #25D366;
 }
 
 .whatsapp-icon svg {
@@ -328,31 +324,6 @@ footer a {
 @media (max-width: 600px) {
     .whatsapp-button {
         display: flex;
-    }
-
-    section {
-        padding: 30px 15px;
-    }
-
-    .profile-bio {
-        font-size: 0.95rem;
-    }
-
-    p {
-        text-indent: 0;
-        color: #333;
-    }
-
-    blockquote {
-        color: #333;
-    }
-
-    label, input, textarea {
-        color: #333;
-    }
-
-    iframe {
-        height: 300px !important;
     }
 }
 
