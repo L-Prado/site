@@ -9,7 +9,7 @@
 body {
     font-family: Cambria, "Times New Roman", serif;
     background-color: #001f3d; /* Azul profundo */
-    color: #ffffff; /* Texto padrão branco para fundo escuro */
+    color: #ffffff; /* Texto branco padrão */
     line-height: 1.7;
     padding: 20px;
     max-width: 800px;
@@ -30,14 +30,14 @@ body {
 p {
     text-align: justify;
     text-justify: inter-word;
-    margin-bottom: 1.4em; /* Aumentamos o espaçamento */
+    margin-bottom: 1.4em;
     text-indent: 1.5em;
     padding-right: 5px;
     font-family: Cambria, "Times New Roman", serif;
-    color: #ffffff; /* Mantém branco onde for necessário */
+    color: #ffffff;
 }
 
-/* Títulos */
+/* Títulos principais */
 h1, h2, h3 {
     font-family: Cambria, "Times New Roman", serif;
     margin-top: 0;
@@ -51,7 +51,11 @@ h1 {
 }
 
 h2 {
-    color: #007BFF; /* Azul médio para subtítulos */
+    color: #007BFF;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+    padding-bottom: 5px;
 }
 
 /* Header Hero */
@@ -101,11 +105,20 @@ section {
     color: #333 !important;
     padding: 40px 20px;
     border-radius: 6px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     opacity: 0;
     transform: translateY(20px);
     transition: all 0.6s ease-out;
     margin-bottom: 30px;
+}
+
+section p,
+section ul,
+section blockquote,
+section label,
+section input,
+section textarea {
+    color: #333 !important;
 }
 
 section.fade-in {
@@ -271,16 +284,52 @@ footer a {
     text-decoration: underline;
 }
 
-/* Media Queries - Mobile */
-@media (max-width: 600px) {
-    .cta-button {
-        width: 100%;
-        text-align: center;
-        margin: auto;
-    }
+/* Botão Fixo WhatsApp - Mobile */
+.whatsapp-button {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366;
+    color: white;
+    border-radius: 50px;
+    padding: 12px 20px;
+    font-size: 1rem;
+    z-index: 1000;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
 
-    .map-button button {
-        width: 100%;
+.whatsapp-button:hover {
+    background-color: #1ebf59;
+}
+
+.whatsapp-button .whatsapp-icon {
+    margin-right: 10px;
+    font-size: 1.2rem;
+    background-color: white;
+    color: #25D366;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.whatsapp-button span {
+    font-family: Cambria, "Times New Roman", serif;
+    font-weight: bold;
+    color: white;
+}
+
+@media (max-width: 600px) {
+    .whatsapp-button {
+        display: flex;
+        animation: slideInUp 0.5s ease-in-out;
     }
 
     .profile-bio {
@@ -306,33 +355,15 @@ footer a {
         height: 300px !important;
     }
 }
-/* Botão Fixo WhatsApp - Apenas Mobile */
-.whatsapp-button {
-    display: none;
-}
 
-.whatsapp-button button {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #25D366; /* Verde do WhatsApp */
-    color: white;
-    border: none;
-    padding: 14px 20px;
-    font-size: 1rem;
-    border-radius: 50px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    z-index: 1000;
-}
-
-.whatsapp-button button:hover {
-    background-color: #1ebf59;
-}
-
-@media (max-width: 600px) {
-    .whatsapp-button {
-        display: block;
+/* Animação do botão */
+@keyframes slideInUp {
+    from {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
     }
 }
